@@ -33773,7 +33773,7 @@ p=[N.bt]
 return new T.h6(C.X,o,o,T.uR(H.b([new T.hm(5,C.bg,new T.bX(new V.a9(0,0,0,this.d/40),new Y.od(u,t,s,r,o),o),o),new T.hm(5,C.bg,T.uR(H.b([new T.bX(new V.a9(n,0,n,0),V.iG(Q.jy(L.jg(C.iN),L.dC("+811076506941",A.bO(o,o,C.l,o,o,o,o,o,o,o,o,q,o,o,o,o,!0,o,o,o,o,o,o))),2),o),new T.bX(new V.a9(n,0,n,0),V.iG(Q.jy(L.jg(C.iP),L.dC("aquashdw@gmail.com",A.bO(o,o,C.l,o,o,o,o,o,o,o,o,q,o,o,o,o,!0,o,o,o,o,o,o))),2),o),new T.bX(new V.a9(n,0,n,0),V.iG(Q.jy(L.jg(C.iO),L.dC("aquashdw@mindslab.ai",A.bO(o,o,C.l,o,o,o,o,o,o,o,o,q,o,o,o,o,!0,o,o,o,o,o,o))),2),o)],p),C.jt,C.jw),o)],p),C.hp,C.ey),o)}}
 Y.od.prototype={
 N:function(a){var u=this,t=null,s="SourceSansPro",r=u.f
-return T.uR(H.b([new K.uD(new L.lV("assets/images/face_paint.png"),u.c,t),L.dC("aquashdw",A.bO(t,t,C.on,t,t,t,t,t,"KaushanScript",t,t,u.d,t,C.aV,t,t,!0,t,t,t,t,t,t)),L.dC("Jeeho Park",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,u.e,t,C.aV,t,t,!0,t,t,t,t,t,t)),L.dC("Mindslab AICS Team",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,r,t,C.p,t,t,!0,t,t,t,t,t,t)),L.dC("Dev Leader",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,r,t,C.p,t,t,!0,t,t,t,t,t,t))],[N.bt]),C.ju,C.ey)}};(function aliases(){var u=H.mK.prototype
+return T.uR(H.b([new K.uD(new L.lV("assets/images/profile.png"),u.c,t),L.dC("aquashdw",A.bO(t,t,C.on,t,t,t,t,t,"KaushanScript",t,t,u.d,t,C.aV,t,t,!0,t,t,t,t,t,t)),L.dC("Jeeho Park",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,u.e,t,C.aV,t,t,!0,t,t,t,t,t,t)),L.dC("Mindslab AICS Team",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,r,t,C.p,t,t,!0,t,t,t,t,t,t)),L.dC("Dev Leader",A.bO(t,t,C.D,t,t,t,t,t,s,t,t,r,t,C.p,t,t,!0,t,t,t,t,t,t))],[N.bt]),C.ju,C.ey)}};(function aliases(){var u=H.mK.prototype
 u.wC=u.v
 u=H.oB.prototype
 u.xp=u.ap
