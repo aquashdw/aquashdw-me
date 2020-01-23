@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_hummingbird/profile_subpage.dart';
 import 'profile_layout.dart';
 void main() => runApp(MyApp());
 
@@ -22,37 +23,56 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/background_opac.jpg'),
-                  fit: BoxFit.cover,
+      home: HomeScaffold(),
+    );
+  }
+}
+
+class HomeScaffold extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Hi!'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.headset),
+            tooltip: 'Music Preferences',
+            onPressed: (){
+              openMusicPrefPage(context);
+            },
+          )
+        ],
+      ),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/background_opac.jpg'),
+                fit: BoxFit.cover,
 //                  colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop)
-                )
-              ),
-            ),
-            Container(
-              child: LayoutBuilder(
-                builder: (BuildContext context, BoxConstraints constraints){
-                  if (constraints.maxWidth < constraints.maxHeight)
-                    return VerticalProfileLayout(
-                      width: constraints.maxWidth,
-                      height: constraints.maxHeight,
-                    );
-                  else // if (constraints.maxHeight < constraints.maxWidth || constraints.maxHeight == constraints.maxWidth)
-                    return HorizontalProfileLayout(
-                      width: constraints.maxWidth,
-                      height: constraints.maxHeight,
-                    );
-                },
               )
             ),
-          ]
-        )
-      ),
+          ),
+          Container(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints){
+                if (constraints.maxWidth < constraints.maxHeight)
+                  return VerticalProfileLayout(
+                    width: constraints.maxWidth,
+                    height: constraints.maxHeight,
+                  );
+                else // if (constraints.maxHeight < constraints.maxWidth || constraints.maxHeight == constraints.maxWidth)
+                  return HorizontalProfileLayout(
+                    width: constraints.maxWidth,
+                    height: constraints.maxHeight,
+                  );
+              },
+            )
+          ),
+        ]
+      )
     );
   }
 }
