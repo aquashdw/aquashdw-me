@@ -17,3 +17,20 @@ void openMusicPrefPage(BuildContext context){
     }
   ));
 }
+
+void openProjectsPage(BuildContext context){
+  Navigator.push(context, MaterialPageRoute(
+    builder: (BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('Projects Page'),
+        ),
+        body: const Center(
+          child: Text(
+            'This is the Projects Page'
+          ),
+        ),
+      );
+    }
+  ));
+}

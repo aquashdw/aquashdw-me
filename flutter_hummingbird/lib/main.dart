@@ -36,12 +36,19 @@ class HomeScaffold extends StatelessWidget{
         title: Text('Hi!'),
         actions: <Widget>[
           IconButton(
+            icon: Icon(Icons.backup),
+            tooltip: 'Projects',
+            onPressed: (){
+              openProjectsPage(context);
+            },
+          ),
+          IconButton(
             icon: Icon(Icons.headset),
             tooltip: 'Music Preferences',
             onPressed: (){
               openMusicPrefPage(context);
             },
-          )
+          ),
         ],
       ),
       body: Stack(
